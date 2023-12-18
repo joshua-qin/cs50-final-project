@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Predict
+{% endblock %}
+
+{% block main %}
+    <script>
+       window.onload = function() {
+        // Format address of image using template literals
+        let result = `/static/${"{{ticker}}"}.png`;
+        // Reference the image variable in order to modify the src attribute with Javascript
+        let image = document.getElementById("image");
+        image.src = result;
+        };
+    </script>
+    <img src= "" id = "image" alt = "stock plot">
+{% endblock %}

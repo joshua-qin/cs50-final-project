@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Company News
+{% endblock %}
+
+{% block main %}
+    <form action="/companynews" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="company" name="company" placeholder="Company Name" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Seach</button>
+    </form>
+
+{% endblock %}

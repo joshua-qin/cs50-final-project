@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tips
+{% endblock %}
+
+{% block main %}
+    <p>{{tip}}</p>
+    <form action="/tips" method="post">
+        <button class="btn btn-primary" type="submit">Click for Another Tip!</button>
+    </form>
+{% endblock %}
